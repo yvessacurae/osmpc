@@ -1,0 +1,25 @@
+{  
+	"name": "OSM Percentage Changer",
+	"version": "0.1.1",
+	"description": "Troca de porcentagem das táticas do OSM",
+    "icons": {
+        "128": "icon_128.png",
+        "16": "icon_16.png"
+    },
+    "developer": {
+        "name": "Yves Sacurae",
+        "url": "https://github.com/yvessacurae/osmpc"
+    },
+    "default_locale": "pt-br",
+    "permissions":["http://*.onlinesoccermanager.com/Team/Tactic"],
+    "content_scripts": [
+		{
+			"run_at": "document_end",
+			"matches": ["http://*.onlinesoccermanager.com/Team/Tactic"],
+			"css": ["changer.css"],
+			"js": ["injection.js"]
+		}
+	],
+	
+	"web_accessible_resources": ["changer.js"]
+ }
