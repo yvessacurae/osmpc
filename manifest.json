@@ -1,8 +1,8 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "OSM Percentage Changer",
-	"version": "0.1.1",
-	"description": "Troca de porcentagem das táticas do OSM",
+	"version": "0.2.1",
+	"description": "Troca de porcentagem das táticas do OSM 3.0",
 
 	"browser_action":{
 		"default_icon": "icon.png",
