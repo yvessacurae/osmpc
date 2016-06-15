@@ -1,16 +1,14 @@
-var mentalityValue = "";
-var timeValue = "";
-var timeLabel = "";
-var mentalityLabel = "";
-var isMoving = false;
+var arrElements = ["pressure", "style", "time"];
 
 window.addEventListener("load", function() {
 	init();
 });
 
-
 function init(){
 	var input = document.getElementsByClassName('form-control');
-	input.style.display = "block";
-	console.log("HELLOOOOOO:" + input);
+	for (var i = 0; i < input.length; i++) {
+		input[i].style.display = "block";
+		input[i].id = arrElements[i];
+	};
 }
+
